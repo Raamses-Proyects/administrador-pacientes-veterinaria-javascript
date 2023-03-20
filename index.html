@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Administrador de Pacientes de Veterinaria, parte de los proyectos personales de 
+    Raamses Chávez. Tecnologias: HTML, CSS, JavaScript">
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <title>Administrador de Pacientes</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <div class="contenedor-animacion">
+        <div class="circulo"></div>
+        <div class="circulo circulo-2 ocultar"></div>
+    </div>
+
+    <header class="header mt-5">
+        <h1 class="header__heading contenedor">Administrador de Pacientes de <span class="header__span">Veterinaria</span></h1>
+    </header>
+
+    <main class="contenedor mt-5">
+        <form class="formulario" id="formulario">
+            <div class="formulario__grid">
+                <div class="formulario__contenido">
+                    <h3 class="formulario__heading">Datos del Paciente</h3>
+
+                    <div class="formulario__campos">
+                        <div class="formulario__bloque">
+                            <label class="formulario__label" for="mascota">Nombre Mascota:</label>
+                            <input class="formulario__input" type="text" id="mascota" name="mascota" placeholder="Nombre de mascota">
+                        </div>
+                        <div class="formulario__bloque">
+                            <label class="formulario__label" for="propietario">Propietario:</label>
+                            <input class="formulario__input" type="text" id="propietario" name="propietario" placeholder="Nombre del dueño de la mascota">
+                        </div>
+                        <div class="formulario__bloque">
+                            <label class="formulario__label" for="telefono">Télefono:</label>
+                            <input class="formulario__input" type="text" id="telefono" name="telefono" placeholder="Número de teléfono">
+                        </div>
+                        <div class="formulario__bloque">
+                            <label class="formulario__label" for="fecha">Fecha:</label>
+                            <input class="formulario__input" type="date" id="fecha" name="fecha">
+                        </div>
+                        <div class="formulario__bloque">
+                            <label class="formulario__label" for="hora">Hora:</label>
+                            <input class="formulario__input" type="time" id="hora" name="hora">
+                        </div>
+                        <div class="formulario__bloque">
+                            <label class="formulario__label" for="sintomas">Síntomas:</label>
+                            <textarea class="formulario__input" name="sintomas" id="sintomas" cols="30" rows="10" placeholder="Describa los sintomas de su mascota"></textarea>
+                        </div>
+
+                        <div class="formulario__bloque">
+                            <button class="formulario__button" type="submit">Crear Cita</button>
+                        </div>
+                    </div>
+                </div> <!-- .formulario__contenido -->
+
+                <div class="formulario__contenido">
+                    <img class="formulario__imagen" src="img/gato.jpg" alt="imagen de gato">
+                </div> <!-- .formulario__contenido -->
+            </div> <!-- .formulario__grid -->
+        </form>
+    </main>
+
+    <section class="datos contenedor mt-5">
+        <h3 class="datos__heading">Administra tus Citas</h3>
+
+        <div class="buscador-contenido">
+            <label class="buscador__label" for="buscador">Buscar:</label>
+            <input class="buscador__input" type="text" id="buscador" placeholder="Nombre de mascota">
+        </div>
+
+        <div class="contenedor-scroll">
+            
+        </div>
+    </section> <!-- .formulario__contenido -->
+
+
+    <footer class="footer mt-5">
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
